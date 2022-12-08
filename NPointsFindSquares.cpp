@@ -29,7 +29,7 @@ private:
     double y_{0};
 };
 
-
+// this returns malloced memory!
 double** distances(vector<Point> pts_arr)
 {
     size_t N = pts_arr.size();
@@ -54,7 +54,6 @@ double** distances(vector<Point> pts_arr)
 
 size_t count(size_t i, size_t j, double** distances, vector<Point> pts)
 {
-    if (j > i) { return count(j,i, distances, pts);}
 
     size_t N = pts.size();
 
