@@ -1,3 +1,7 @@
+// PROBLEM : Given a set of N >= 4 points in the X-Y plane, find the number of squares that can be drawn such that the
+// corners of each square lie on any 4 of the points in the given set. Note that the squares do not have to be aligned
+// with the x and y axes.
+
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
