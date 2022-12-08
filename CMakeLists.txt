@@ -4,3 +4,4 @@ project(Interview_Problems)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(NPointsFindSquares NPointsFindSquares.cpp)
+add_executable(NPointsFindRectangles NPointsFindRectangles.cpp)
