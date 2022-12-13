@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(NPointsFindSquares NPointsFindSquares.cpp)
 add_executable(NPointsFindRectangles NPointsFindRectangles.cpp)
+add_executable(NisSumofSquares NisSumofSquares.cpp)

@@ -134,5 +134,5 @@ int main() {
     vector<int> x = {-1, -1, -1, 0, 0, 0, 1, 1, 1};
     vector<int> y = {1,   0, -1, 1, 0,-1, 0, 1, -1};
 
-    std::cout << "Number of squares: " << num_Rectangles(x,y);
+    std::cout << "Number of Rectangles: " << num_Rectangles(x,y);
 }
