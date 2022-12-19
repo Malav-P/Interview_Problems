@@ -38,7 +38,7 @@ private:
         vector<int> buckets(N);
 
         int c = factorial(N - 1);
-        for (int i = 0; i < N-1 ; i++)
+        for (int i = 0; i < N-1; i++)
         {
             // if k == 0 this corresponds to the last bucket, otherwise it corresponds to ceil(k/c) bucket
             buckets[i] = k == 0 ? N - i : int(k/c + (k % c != 0));
@@ -59,9 +59,11 @@ private:
         for (int i = 0; i < N; i++) {nums[i] = i+1;}
 
         vector<int> digits(N);
-        for (int i = 0; i < buckets.size(); i++)
+        for (int i = 0; i < N; i++)
         {
             digits[i] = nums[buckets[i]-1];
+
+            // this happens in O(n) time, can be optimized with a data structure offering O(1) removal time
             nums.erase(nums.begin()+buckets[i]-1);
         }
 
@@ -77,6 +79,5 @@ int main()
 {
 
     Solution(4,3);
-
     return 0;
 }
