@@ -173,6 +173,6 @@ void NQueens(int N)
 
 int main()
 {
-    NQueens(5);
+    NQueens(4);
     return 0;
 }
