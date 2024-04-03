@@ -10,14 +10,15 @@ using namespace std;
 class Solution
 {
 public:
-    void solve()
-    {
-        recurse(0);
-    }
     explicit Solution(int N)
             :N(N),
-             board(new int*[N])
-    { for (int i = 0 ; i < N; i++){ board[i] = new int[N]();}}
+             board(new int*[N]){
+
+                 for (int i = 0 ; i < N; i++)
+                    { board[i] = new int[N]();}
+
+                    recurse(0);
+                 }
 
     ~Solution()
     {
@@ -166,13 +167,8 @@ private:
 };
 
 
-void NQueens(int N)
-{
-    Solution(N).solve();
-}
-
 int main()
 {
-    NQueens(4);
+    auto sol = Solution(4);
     return 0;
 }
